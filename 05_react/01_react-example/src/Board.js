@@ -6,12 +6,19 @@ export class Board extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            squares: Array(9).fill(null)
+            squares: []
         };
     }
 
     renderSquare(i) {
-        return <Square value={i}/>;
+        return <Square value={this.state.squares[i]} onClick={() => this.updateValue(i)}/>;
+    }
+
+    updateValue(i) {
+        const newSquares = [...this.state.squares];
+        newSquares[i] = 'X';
+        console.log('Updating square value');
+        this.setState({squares: newSquares});
     }
 
     render() {
