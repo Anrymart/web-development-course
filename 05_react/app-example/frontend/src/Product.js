@@ -9,7 +9,9 @@ class Product extends React.Component {
         return (
             <div className="product">
                 {this.props.data.name}
-                <img al="product image" src={this.props.data.imageUrl}/>
+                <img alt="product image" src={this.props.data.imageUrl}/>
+                <p>Description: {this.props.data.description}</p>
+                <p>Price: {this.props.data.price}</p>
             </div>
         );
     }

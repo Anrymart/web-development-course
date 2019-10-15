@@ -12,11 +12,16 @@ public class ProductController {
 
     public ProductController() {
         products = new ArrayList<>();
-        products.add(new Product("iphone 12", "New apple iphone 12", "https://localhost:3000/iphone.png", 123));
+        products.add(new Product("iphone 12", "New apple iphone 12", "http://localhost:3000/iphone.png", 123));
+        products.add(new Product("iphone 13", "New apple iphone 13", "http://localhost:3000/iphone.png", 123));
     }
 
     public void getProducts(Context ctx) {
         ctx.json(products);
+    }
+
+    public void addProduct(Context ctx) {
+//        products.add();
     }
 
 }

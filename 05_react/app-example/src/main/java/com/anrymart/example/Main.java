@@ -18,6 +18,7 @@ public class Main {
         app.routes(() -> {
             path("/api/products", () -> {
                 get(productController::getProducts);
+                post(productController::addProduct);
             });
         });
     }
