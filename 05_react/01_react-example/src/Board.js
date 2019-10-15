@@ -6,7 +6,8 @@ export class Board extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            squares: []
+            squares: [],
+            playerX: true
         };
     }
 
@@ -15,10 +16,15 @@ export class Board extends React.Component {
     }
 
     updateValue(i) {
+        if (this.state.squares[i]) {
+            return;
+        }
         const newSquares = [...this.state.squares];
-        newSquares[i] = 'X';
-        console.log('Updating square value');
-        this.setState({squares: newSquares});
+        newSquares[i] = this.state.playerX ? 'X' : '0';
+        this.setState({
+            squares: newSquares,
+            playerX: !this.state.playerX
+        });
     }
 
     render() {
