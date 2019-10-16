@@ -12,7 +12,7 @@ Open `Main.java` class and press the green triangle to launch java application.
 
 ### Frontend
 
-Navigate (`cd`) to frontend directory and run command
+Navigate (`cd`) to `frontend` directory and run command
 
 ```bash
 npm install
