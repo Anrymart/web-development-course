@@ -8,10 +8,12 @@ class Product extends React.Component {
     render() {
         return (
             <div className="product">
-                {this.props.data.name}
                 <img alt="product image" src={this.props.data.imageUrl}/>
-                <p>Description: {this.props.data.description}</p>
-                <p>Price: {this.props.data.price}</p>
+                <div className="product-title">
+                    {this.props.data.name}
+                </div>
+                <div className="product-description">{this.props.data.description}</div>
+                <p>${this.props.data.price}</p>
             </div>
         );
     }
