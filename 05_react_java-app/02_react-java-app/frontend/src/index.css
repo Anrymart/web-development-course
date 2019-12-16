@@ -1,0 +1,24 @@
+body {
+    font: 16px 'Century Gothic', Futura, sans-serif;
+    margin: 20px;
+}
+
+.main {
+}
+
+.product {
+    border-bottom: 1px solid #ccc;
+}
+
+.product-title {
+    font-size: 1.5em;
+}
+
+.product-description {
+    font-style: italic;
+    color: #888;
+}
+
+.product-price {
+
+}
