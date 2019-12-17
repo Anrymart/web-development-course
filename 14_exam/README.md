@@ -1,8 +1,8 @@
-#Exam
+# Exam
 
-##Test
+## Test
 
-###Topics
+### Topics
 
 - HTML
 - CSS
@@ -18,7 +18,7 @@
 
 
 
-##Practical tasks
+## Practical tasks
 1. **Primes.** Create a simplicity check calculator. Users should be able to input a number and click the button or press some key to get a result - if the number is prime or composite.
 2. **Fibonacci.** Create a Fibonacci sequence calculator. User inputs a number n and application outputs all Fibonacci numbers up to the n-th member.
 3. **Who is gonna win?** Create a random number generator. Users should be able to enter a number, let it be n, and calculator should output a random integer in the interval from 1 to n.
